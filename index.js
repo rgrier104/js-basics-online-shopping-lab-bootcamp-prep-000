@@ -24,13 +24,11 @@ function viewCart() {
       console.log(item)
       var output = `In your cart, you have `
       for (var itemName in item) {
-        output = output + `${item[itemName]} at ,`
+        output = output + `${cart[i].itemName} at ${cart[i].itemPrice},`
       }
     } return output
   }
 }
-viewCart()
-console.log(item)
 
 function total() {
   // write your code here
