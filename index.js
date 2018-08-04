@@ -24,7 +24,7 @@ function viewCart() {
       var output = `In your cart, you have `
       for (var itemName in item) {
         output = output + `${itemName} at ${item[itemName]},`
-      } 
+      }
     } return output
   }
 }
