@@ -41,7 +41,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(item) === false){
+  if (cart.indexOf(item) === -1){
      console.log(`That item is not in your cart.`)
    }
   for (var i = 0; i < cart.length; i++){
