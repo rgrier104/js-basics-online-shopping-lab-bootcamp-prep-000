@@ -20,12 +20,8 @@ function viewCart() {
     return `Your shopping cart is empty.`
   } else {
     for(var i = 0; i < cart.length - 1; i++) {
-      var item = cart[i]
-      console.log(item)
       var output = `In your cart, you have `
-      for (var itemName in item) {
-        output = output + `${cart[i].itemName} at ${cart[i].itemPrice},`
-      }
+      output = output + `${cart[i].itemName} at ${cart[i].itemPrice},`
     } return output
   }
 }
