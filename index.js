@@ -31,6 +31,7 @@ function viewCart() {
     }
   } return output
 }
+}
 
 function total() {
   // write your code here
