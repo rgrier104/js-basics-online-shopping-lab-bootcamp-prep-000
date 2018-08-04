@@ -21,7 +21,7 @@ function viewCart() {
   } else {
     for(var i = 0; i < cart.length - 1; i++) {
       var item = cart[i]
-      var output1 = `In your cart, you have `
+      var output = `In your cart, you have `
       for (var itemName in item) {
         output = output + `${itemName} at ${item[itemName]},`
       } 
