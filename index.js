@@ -42,10 +42,10 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++){
-    if (cart.includes(item)) {
-    cart.splice(i+1,1)
+    if (cart.includes(item)===false) {
+      return `That item is not in your cart.`
   }  else {
-    return `That item is not in your cart.`
+    cart.splice(i+1,1)
   }
 } return cart
 }
