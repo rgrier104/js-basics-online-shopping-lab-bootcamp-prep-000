@@ -23,7 +23,7 @@ function viewCart() {
       var item = cart[i]
       var output = `In your cart, you have `
       for (var itemName in item) {
-        output = output + `${itemName} at ${item[itemName]},`
+        output = output + `${item[itemName]} at ,`
       }
     } return output
   }
