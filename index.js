@@ -41,14 +41,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var inCart = false
   for (var i = 0; i < cart.length; i++){
-    if (cart[i].itemName.hasOwnProperty(item)) {
-    var inCart = true
-    cart.splice(i-1,1)
-  } if (!inCart) {
-    console.log(`That item is not in your cart.`)
-  } return cart
+    cart.splice(1,1)
 }
 }
 
