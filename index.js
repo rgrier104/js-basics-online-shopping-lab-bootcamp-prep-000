@@ -24,8 +24,8 @@ function viewCart() {
   else {
     var output = `In your cart, you have `
     for(var i = 1; i < cart.length - 1; i++) {
-      output += `${cart[i].itemName} at $${cart[i].itemPrice}, `
-    }
+      output += `${cart[i].itemName} at $${cart[i].itemPrice}, and`
+    } 
   } return output
 }
 
