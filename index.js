@@ -18,12 +18,13 @@ return `${item} has been added to your cart.`
 function viewCart() {
   if (cart.length === 0){
     return `Your shopping cart is empty.`
-  } else {
-    for(var i = 0; i < cart.length - 1; i++) {
-      var output = `In your cart, you have `
-      output += `${cart[i].itemName} at ${cart[i].itemPrice},`
-    } return output
   }
+  else {
+    for(var i = 0; i < cart.length - 1; i++) {
+      var output = [`In your cart, you have `]
+      output.push(`${cart[i].itemName} at ${cart[i].itemPrice},`)
+    }
+  } return output
 }
 
 function total() {
