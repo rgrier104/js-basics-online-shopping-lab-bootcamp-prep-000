@@ -23,7 +23,7 @@ function viewCart() {
   }
   else {
     var output = `In your cart, you have `
-    for(var i = 1; i < cart.length; i++) {
+    for(var i = 0; i < cart.length; i++) {
       output += `${cart[i].itemName} at $${cart[i].itemPrice}, and`
     }
   } return output
