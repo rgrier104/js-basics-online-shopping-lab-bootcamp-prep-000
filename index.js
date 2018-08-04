@@ -41,12 +41,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(item)) {
   for (var i = 0; i < cart.length; i++){
+    currItem = cart[i].itemName
+    if (currItem = item){
     cart.splice(i,1)
-    return cart
   }
-} else {
+} return cart
+ if (!cart.includes(item)){
     console.log(`That item is not in your cart.`)
   }
 }
