@@ -29,6 +29,7 @@ function viewCart() {
     } return output
   }
 }
+viewCart()
 console.log(item)
 
 function total() {
