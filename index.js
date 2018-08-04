@@ -41,7 +41,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(item)===false){
+  if (!cart[i].hasOwnProperty(item)){
     return `That item is not in your cart.`
   } else {
   for (var i = 0; i < cart.length; i++){
