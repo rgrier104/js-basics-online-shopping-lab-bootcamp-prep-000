@@ -41,6 +41,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  getCart()
   if (cart.indexOf(item) === -1){
      console.log(`That item is not in your cart.`)
    }
