@@ -44,6 +44,7 @@ function removeFromCart(item) {
   if (cart.includes(item)===false){
     return `That item is not in your cart.`
   } else {
+    var removed = []
   for (var i = 0; i < cart.length; i++){
     var removed = cart.splice(i,2)
   }
